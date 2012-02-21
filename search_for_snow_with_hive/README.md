@@ -1,12 +1,26 @@
 http://magnusljadas.wordpress.com/2012/01/29/search-for-snow-with-hadoop-hive/
 
+I don’t know how I ended up becoming the head of our local community 
+association. Anyhow, I’m now responsible for laying out next year’s 
+budget. Most of our expenses seem to be fixed from one year to another, 
+but then there’s the expense for the snow removal service. This year, 
+no snow. Last year, most snow on record in 30 years! How do you budget 
+for something as volatile as snow? I need more data!
 
+Instead of just googling the answer, we’re going to fetch some raw 
+data and feed it into Hadoop Hive.
 
-# Download temperature and precipitation data sets by executing the download script:
+The Swedish national weather service SMHI provides the data we need: 
+daily temperature and precipitation data from 1961 to 1997, gathered 
+at a weather station about 60 km from where I live.
+
+# Let's get some raw data
+
+Open the terminal and execute the prepared download script:
 
     $ ./download_data_from_SMHI.sh
 
-... or alternatively use the temperature.txt and precipitation.txt found in the data folder.
+... or alternatively use the *temperature.txt* and *precipitation.txt* found in the *problem_solving_with_hadoop/search_for_snow_with_hive/data* folder.
 
 
 
