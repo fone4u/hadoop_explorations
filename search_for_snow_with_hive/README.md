@@ -1,6 +1,6 @@
 # Search for Snow with Hadoop  Hive
 
-Here's the original blog post: http://magnusljadas.wordpress.com/2012/01/29/search-for-snow-with-hadoop-hive/
+*Here's the original blog post:* http://magnusljadas.wordpress.com/2012/01/29/search-for-snow-with-hadoop-hive/
 
 I don’t know how I ended up becoming the head of our local community 
 association. Anyhow, I’m now responsible for laying out next year’s 
@@ -49,7 +49,7 @@ The columns in the temperature and precipitation data sets looks like this:
 
 ## Create temperature and precipitation Hive tables
 
-Now we have properly formatted raw data ready to import into Hive. 
+Now we have properly formatted raw data ready to import into Hive. Let's boot up hive and create some tables!
 
     $ hive
 
@@ -82,6 +82,8 @@ Now we have properly formatted raw data ready to import into Hive.
 
 ## Load temperature and precipitation data into Hive tables
 
+Assuming you started hive in the same directory as the temperature.txt and precipitation.txt files exist:
+
     LOAD DATA LOCAL INPATH 'temperature.txt'
     OVERWRITE INTO TABLE temperature;
 
@@ -90,7 +92,7 @@ Now we have properly formatted raw data ready to import into Hive.
 
 ## Let's search for snow!
 
-Let’s define a snowy day as a day that has a temperature below 0 degrees Celsius (freezing) with a precipitation of more than 3 mm (approximately 30 mm snow).
+With our raw data loaded into hive, we're ready to search. Let’s define a snowy day as a day that has a temperature below 0 degrees Celsius (freezing) with a precipitation of more than 3 mm (approximately 30 mm snow).
 
 - Number of snow days grouped by year
 * TTTM Temperature < 0 degrees Celsius
