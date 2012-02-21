@@ -107,6 +107,7 @@ With our raw data loaded into hive, we're ready to search. Let’s define a snow
 
 Hive supports subqueries, let’s calculate the average number of snow days:
 
+
     SELECT AVG(sum)
     FROM (
     SELECT year(from_unixtime(unix_timestamp(precipitation.datum, 'yyyyMMdd'))), count(*) as sum
