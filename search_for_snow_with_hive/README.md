@@ -12,19 +12,19 @@ http://magnusljadas.wordpress.com/2012/01/29/search-for-snow-with-hadoop-hive/
 
 # Create temperature and precipitation Hive tables
 
-´$ hive´
+    $ hive
 
-´CREATE TABLE temperature (
-DATUM STRING,
-TT1 DOUBLE,
-TT2 DOUBLE,
-TT3 DOUBLE,
-TTN DOUBLE,
-TTTM DOUBLE,
-TTX DOUBLE)
-ROW FORMAT DELIMITED
-FIELDS TERMINATED BY ','
-STORED AS TEXTFILE;´
+    CREATE TABLE temperature (
+    DATUM STRING,
+    TT1 DOUBLE,
+    TT2 DOUBLE,
+    TT3 DOUBLE,
+    TTN DOUBLE,
+    TTTM DOUBLE,
+    TTX DOUBLE)
+    ROW FORMAT DELIMITED
+    FIELDS TERMINATED BY ','
+    STORED AS TEXTFILE;
 
 ´CREATE TABLE precipitation (
 DATUM STRING,
