@@ -1,4 +1,4 @@
-# Analyzing N-grams with Hadoop Pig
+# Analyzing Every Word Ever Written With Hadoop Pig
 
 (UNDER CONSTRUCTION)
 
