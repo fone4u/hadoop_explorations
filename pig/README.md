@@ -1,18 +1,18 @@
 # Analyzing N-grams with Hadoop Pig
 
+(UNDER CONSTRUCTION)
 
 Most things related to Hadoop seem to have an animal connotation attached to it. I don't 
-know the reason for calling it Pig, but I just like a real pig, Hadoop Pig can be trained to 
-search for precious things buried beyond our ordinary reach. Truffels for real pig, data for Hadoop Pig.
-A brute force animal who can also be delicate. Enough!
+know the reason for calling it Pig, but I can see that just like a real pig, Hadoop Pig can be trained to 
+search for precious things buried beyond our ordinary reach. Truffels in the case of real pig, data in the case of Hadoop Pig.
+A brute force savage animal who can also be delicate. 
 
 On of the most common "Hello World" Pig example is to count words in a text. Let's build on this example 
-but take it to the ultimate extreme - to count every word ever written (or scanned by Google) from 1800 to 2000.
+but take it to the ultimate extreme - to count every word ever written in books between 1800 and 2000.
 
 
 
 
-(UNDER CONSTRUCTION)
 
 N-gram: http://en.wikipedia.org/wiki/N-gram
 
@@ -28,7 +28,7 @@ The script will:
 * unzip and compress into bz2 (HDFS native format)
 * copy data into HDFS
 
-Downloading all the data will take awhile - go fetch some coffee! ;-)
+Downloading all the data will take a while - go fetch some coffee! ;-)
 
  
 Columns in the 1gram 1800-2000 dataset
