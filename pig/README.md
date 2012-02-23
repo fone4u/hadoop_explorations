@@ -2,21 +2,18 @@
 
 (UNDER CONSTRUCTION)
 
-Most things related to Hadoop seem to have an animal connotation attached to it. I don't 
-know the reason for calling it Pig, but I can see that just like a real pig, Hadoop Pig can be trained to 
-search for precious things buried beyond our ordinary reach. Truffels in the case of real pig, data in the case of Hadoop Pig.
-A brute force savage animal who can also be delicate. 
+Most things related to Hadoop seem to have an animal connotation attached to it. I can see that just like a real pig, Hadoop Pig can be trained to 
+search for precious things buried beneath. Truffels in the case of real pig, BIG DATA in the case of Hadoop Pig.
+A brute force savage animal who can also be delicate and precise. 
 
-On of the most common "Hello World" Pig example is to count words in a text. Let's build on this example 
-but take it to the ultimate extreme - to count every word ever written in books between 1800 and 2000.
-
+One of the most common "Hello World" Pig example is to count words in a text. Let's build on this example, 
+but take it to the ultimate extreme: to count every word ever written in books between 1800 and 2000.
 
 
+With the Google N-gram Viewer you can see how common a word has been the last 200 years. In our case we're going to use Google's 1-gram data set, or the "unigram": the occurance of 1 single word i every book written (scanned by Google) between 1800 and 2000.
 
-
-N-gram: http://en.wikipedia.org/wiki/N-gram
-
-Google NGram Viewer: http://books.google.com/ngrams
+* Google NGram Viewer: http://books.google.com/ngrams
+* N-gram: http://en.wikipedia.org/wiki/N-gram
 
 Script for downloading data from Google and uploading it into HDFS:
 
