@@ -39,9 +39,23 @@ These are the columns in the 1gram 1800-2000 dataset:
 If you're running on a single node, or like me, running on a virtual machine on one kernel on an old Mac, you may want to create a reduced dataset in order to get feedback faster and speed up development in general.
 Create a small sample from a ~200 mb (compressed) file
 
+
+Load:
+
     A = LOAD 'hdfs://localhost.localdomain/tmp/books/ngrams/books/googlebooks-eng-all-1gram-20090715-0.csv.bz2' 
     USING PigStorage('\t') AS (ngram, year, match_count, page_count, volume_count);
+
+
+Sample:
+
     B = SAMPLE A 0.001;
+
+Or
+
+    B = LIMIT A 10000;
+
+Store:
+
     STORE B INTO 'hdfs://localhost.localdomain/tmp/ngram_sample' USING PigStorage();
 
 
