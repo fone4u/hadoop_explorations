@@ -67,7 +67,8 @@ Load the whole data set using wildcard (*) - this will take hours to process on 
 
 Load the sample
 
-    A = LOAD 'hdfs://localhost.localdomain/tmp/ngram_sample' USING PigStorage() AS (ngram, year, match_count, page_count, volume_count);
+    A = LOAD 'hdfs://localhost.localdomain/tmp/ngram_sample' 
+    USING PigStorage() AS (ngram, year, match_count, page_count, volume_count);
 
 Let's find out what the 100 most popular words are 
 
