@@ -2,17 +2,19 @@
 
 (UNDER CONSTRUCTION)
 
-Most things related to Hadoop seem to have an animal connotation attached to it. I can see that just like a real pig, Hadoop Pig can be trained to 
-search for precious things buried beneath. Truffels in the case of real pig, BIG DATA in the case of Hadoop Pig.
-A brute force savage animal who can also be delicate and precise. 
+Most things related to Hadoop seem to have an animal connotation attached to it. I can see that just like a real pig, 
+Hadoop Pig can be trained to search for precious things buried beneath. Truffels in the case of real pig, BIG DATA 
+in the case of Hadoop Pig. A brute force savage animal who can also be delicate and precise. 
 
 One of the most common "Hello World" Pig example is to count words in a text. Let's build on this example, 
-but take it to the ultimate extreme: to count every word ever written in books between 1800 and 2000.
+and take it to an extreme: to count every word ever written in books between 1800 and 2000.
 
-
-With the Google N-gram Viewer you can see how common a word has been the last 200 years. In our case we're going to use Google's 1-gram data set, or the "unigram": the occurance of 1 single word i every book written (scanned by Google) between 1800 and 2000.
+With the Google N-gram Viewer you can see how common a word has been over the last 200 years. 
+In our case we're going to use Google's 1-gram (i.e., individual words or the "unigram") dataset: the occurance of 
+1 single word in every book written (scanned by Google) between 1800 and 2000 grouped by year.
 
 * Google NGram Viewer: http://books.google.com/ngrams
+* About the datasets: http://books.google.com/ngrams/datasets
 * N-gram: http://en.wikipedia.org/wiki/N-gram
 
 Script for downloading data from Google and uploading it into HDFS:
@@ -28,7 +30,7 @@ The script will:
 Downloading all the data will take a while - go fetch some coffee! ;-)
 
  
-Columns in the 1gram 1800-2000 dataset
+These are the columns in the 1gram 1800-2000 dataset:
 
     ngram, year, match_count, page_count, volume_count
 
