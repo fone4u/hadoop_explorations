@@ -65,9 +65,11 @@ Load the whole data set using wildcard (*) - this will take hours to process on 
     A = LOAD 'hdfs://localhost.localdomain/tmp/books/ngrams/books/googlebooks-eng-all-1gram-20090715-*.csv.bz2'
     USING PigStorage('\t') AS (ngram, year, match_count, page_count, volume_count);
 
+Load the sample
+
     A = LOAD 'hdfs://localhost.localdomain/tmp/ngram_sample' USING PigStorage() AS (ngram, year, match_count, page_count, volume_count);
 
-Find out what the 100 most popular words are 
+Let's find out what the 100 most popular words are 
 
     B = GROUP A BY ngram;
     C = FOREACH B GENERATE group AS ngram, SUM(A.match_count) AS cnt;
