@@ -3,7 +3,7 @@
 (UNDER CONSTRUCTION)
 
 Most things related to Hadoop seem to have an animal connotation attached to it. I can see that just like a real pig, 
-Hadoop Pig can be trained to search for precious things buried beneath. Truffels in the case of real pig, BIG DATA 
+Hadoop Pig can be trained to search for precious things buried beneath - truffels in the case of real pig, BIG DATA 
 in the case of Hadoop Pig. A brute force savage animal who can also be delicate and precise. 
 
 One of the most common "Hello World" Pig example is to count words in a text. Let's build on this example, 
