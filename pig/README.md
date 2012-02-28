@@ -109,5 +109,4 @@ Something's not quite right here 1.8399669358E10 + 2.111040694E9 = 20510710052.0
 
 Instead of dumping the result to the terminal we could store the output in a compressed file. By appending ".bz2" to a file, Pig will automatically store compressed output.
 
- F = FOREACH E GENERATE LOWER(ngram) AS ngram, year, match_count, page_count, volume_count;
-     STORE C INTO 'hdfs://localhost.localdomain/tmp/<my output file>.bz2' USING PigStorage();
+     STORE E INTO 'hdfs://localhost.localdomain/tmp/<my output file>.bz2' USING PigStorage();
