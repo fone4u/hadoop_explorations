@@ -2,9 +2,9 @@
 
 Most things related to Hadoop seem to have an animal connotation. I can see that just like a real pig, 
 Hadoop Pig can be trained to search for precious things buried beneath - truffels in the case of a real pig, BIG DATA 
-in the case of Hadoop Pig. The pig is a brute force animal who can also be delicate and precise. 
+in the case of Hadoop Pig.  
 
-One of the most common "Hello World" Pig example is the count words of a text. Let's build on this example, 
+A common "Hello World" Pig example is to count words in a block of text. Let's build on this example, 
 and take it to an extreme: to count every word ever written in books between 1800 and 2000!
 
 With the Google N-gram Viewer you can see how common a word has been over the last 200 years. 
